@@ -1,0 +1,1881 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Use Case Template</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Century Gothic";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;
+	text-transform:uppercase;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	text-transform:uppercase;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:1.0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:30.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:40.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:50.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:60.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:70.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:80.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	font-variant:small-caps;
+	color:#146194;
+	font-weight:bold;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.75in;
+	text-indent:-.25in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#052F61;}
+a:link, span.MsoHyperlink
+	{color:#0D2E46;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#356A95;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:12.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.5in;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	letter-spacing:-.3pt;}
+span.MsoSubtleEmphasis
+	{color:#595959;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleReference
+	{font-variant:small-caps;
+	color:#595959;
+	border:none;
+	text-decoration:none;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#146194;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.5pt;
+	font-weight:bold;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;}
+p.BodyText5, li.BodyText5, div.BodyText5
+	{mso-style-name:"Body Text 5";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.5in;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.BodyText6, li.BodyText6, div.BodyText6
+	{mso-style-name:"Body Text 6";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.BodyText7, li.BodyText7, div.BodyText7
+	{mso-style-name:"Body Text 7";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:1.5in;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.ByLine, li.ByLine, div.ByLine
+	{mso-style-name:ByLine;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.ByLineCxSpFirst, li.ByLineCxSpFirst, div.ByLineCxSpFirst
+	{mso-style-name:ByLineCxSpFirst;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.ByLineCxSpMiddle, li.ByLineCxSpMiddle, div.ByLineCxSpMiddle
+	{mso-style-name:ByLineCxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.ByLineCxSpLast, li.ByLineCxSpLast, div.ByLineCxSpLast
+	{mso-style-name:ByLineCxSpLast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.ChangeHistoryTitle, li.ChangeHistoryTitle, div.ChangeHistoryTitle
+	{mso-style-name:"ChangeHistory Title";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.Code, li.Code, div.Code
+	{mso-style-name:Code;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:9.0pt;
+	font-family:"Courier New";}
+p.Definition, li.Definition, div.Definition
+	{mso-style-name:Definition;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.ExampleText, li.ExampleText, div.ExampleText
+	{mso-style-name:"Example Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	border:none;
+	padding:0in;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;}
+p.FigureTitle, li.FigureTitle, div.FigureTitle
+	{mso-style-name:"Figure Title";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:9.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.HeaderBase, li.HeaderBase, div.HeaderBase
+	{mso-style-name:"Header Base";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.HeadingBase, li.HeadingBase, div.HeadingBase
+	{mso-style-name:"Heading Base";
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.InstrHeading1, li.InstrHeading1, div.InstrHeading1
+	{mso-style-name:"Instr Heading 1";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;}
+p.InstrHeading2, li.InstrHeading2, div.InstrHeading2
+	{mso-style-name:"Instr Heading 2";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;
+	font-weight:bold;}
+p.ListBase, li.ListBase, div.ListBase
+	{mso-style-name:"List Base";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.Note, li.Note, div.Note
+	{mso-style-name:Note;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:9.0pt;
+	margin-left:0in;
+	line-height:107%;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.StdHeading1, li.StdHeading1, div.StdHeading1
+	{mso-style-name:"Std Heading 1";
+	margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;}
+p.StdHeading2, li.StdHeading2, div.StdHeading2
+	{mso-style-name:"Std Heading 2";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;}
+p.SuperTitle, li.SuperTitle, div.SuperTitle
+	{mso-style-name:SuperTitle;
+	margin-top:48.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.SuperTitleCxSpFirst, li.SuperTitleCxSpFirst, div.SuperTitleCxSpFirst
+	{mso-style-name:SuperTitleCxSpFirst;
+	margin-top:48.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.SuperTitleCxSpMiddle, li.SuperTitleCxSpMiddle, div.SuperTitleCxSpMiddle
+	{mso-style-name:SuperTitleCxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.SuperTitleCxSpLast, li.SuperTitleCxSpLast, div.SuperTitleCxSpLast
+	{mso-style-name:SuperTitleCxSpLast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:14.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.TableText, li.TableText, div.TableText
+	{mso-style-name:"Table Text";
+	margin-top:2.0pt;
+	margin-right:.05in;
+	margin-bottom:2.0pt;
+	margin-left:.05in;
+	line-height:107%;
+	font-size:9.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.TableHeading, li.TableHeading, div.TableHeading
+	{mso-style-name:TableHeading;
+	margin-top:3.0pt;
+	margin-right:.05in;
+	margin-bottom:3.0pt;
+	margin-left:.05in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.TableTitle, li.TableTitle, div.TableTitle
+	{mso-style-name:TableTitle;
+	margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.TOCBase, li.TOCBase, div.TOCBase
+	{mso-style-name:"TOC Base";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;}
+p.TOCTitle, li.TOCTitle, div.TOCTitle
+	{mso-style-name:"TOC Title";
+	margin-top:48.0pt;
+	margin-right:0in;
+	margin-bottom:48.0pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:30.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.normaql, li.normaql, div.normaql
+	{mso-style-name:normaql;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.normaqlCxSpFirst, li.normaqlCxSpFirst, div.normaqlCxSpFirst
+	{mso-style-name:normaqlCxSpFirst;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.normaqlCxSpMiddle, li.normaqlCxSpMiddle, div.normaqlCxSpMiddle
+	{mso-style-name:normaqlCxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.normaqlCxSpLast, li.normaqlCxSpLast, div.normaqlCxSpLast
+	{mso-style-name:normaqlCxSpLast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:85%;
+	font-size:36.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.line, li.line, div.line
+	{mso-style-name:line;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.lineCxSpFirst, li.lineCxSpFirst, div.lineCxSpFirst
+	{mso-style-name:lineCxSpFirst;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.lineCxSpMiddle, li.lineCxSpMiddle, div.lineCxSpMiddle
+	{mso-style-name:lineCxSpMiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+p.lineCxSpLast, li.lineCxSpLast, div.lineCxSpLast
+	{mso-style-name:lineCxSpLast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:85%;
+	border:none;
+	padding:0in;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;
+	text-transform:uppercase;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	text-transform:uppercase;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-weight:bold;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;
+	font-style:italic;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	text-transform:uppercase;
+	letter-spacing:-.75pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Century Gothic",sans-serif;
+	color:#052F61;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	color:#146194;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	font-family:"Century Gothic",sans-serif;
+	color:#146194;
+	letter-spacing:-.3pt;}
+.MsoChpDefault
+	{font-family:"Century Gothic",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0D2E46" vlink="#356A95">
+
+<div class=WordSection1>
+
+<p class=MsoTocHeading>By Afsar Ali</p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525394928">Spark's
+machine learning library (MiLib) for statistic and EDA<span style='display:
+none;text-decoration:none'>   </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394929">Background<span
+style='display:none;text-decoration:none'>. </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394930">Dataset used<span
+style='display:none;text-decoration:none'>.. </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394931">Results<span
+style='display:none;text-decoration:none'> </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394932">Insights<span
+style='display:none;text-decoration:none'> </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394933">Challenges<span
+style='display:none;text-decoration:none'> </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394934">Hadoop Book
+Application<span style='display:none;text-decoration:none'>. </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525394935">Related V’s<span
+style='display:none;text-decoration:none'> </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525394936">Screenshots
+of Jupyter Works<span style='display:none;text-decoration:none'>  </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525394937">Appendix:
+Source Code<span style='display:none;text-decoration:none'>  </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525394938">Refereces<span
+style='display:none;text-decoration:none'>  </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc525394928"><b>Spark's machine learning library (MiLib) for
+statistic and EDA</b></a></h1>
+
+<h2>&nbsp;</h2>
+
+<h2><a name="_Toc525394929">Background</a></h2>
+
+<p class=MsoBodyText>This use case is for exploratory analysis goes beyond simple
+analytics. We use <a name="_Hlk525393453">Spark's machine learning library MlLib
+for basic statistic</a>s functionality and to explore and better understand our
+dataset. </p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<h2><a name="_Toc525394930">Dataset used</a></h2>
+
+<p class=MsoBodyText>I use reduced or 10% of KDD Cup 1999 dataset which has 2.1M
+observation or 75M uncompressed data. KDD cup dataset was used for The Third
+International Knowledge Discovery and Data Mining Tools Competition, which was
+held in conjunction with KDD-99 the Fifth International Conference on Knowledge
+Discovery and Data Mining. The competition task was to build a network
+intrusion detector, a predictive model capable of distinguishing between
+``bad'' connections, called intrusions or attacks, and ``good'' normal
+connections. This database contains a standard set of data which includes a
+wide variety of intrusions simulated in a military network environment.</p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<h2><a name="_Toc525394931">Results</a></h2>
+
+<p class=MsoBodyText>I was able to run about 90% of the code on my Jupyter
+notebook. After 90% of successful code chunk, I couldn’t complete the code due
+to the old vs. new version of JavaScript error, I couldn’t find the solution. I
+was happy to be able to troubleshoot most of the codes since there were incompatibilities
+between the old python codes and new python codes, this resulted in me to stop
+at the correlation matrix step. If I were able to run all the code, the result
+would be to find correlated variables on the 10% KDD dataset.</p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<h2><a name="_Toc525394932">Insights</a> </h2>
+
+<p class=MsoBodyText>The major insight from using Spark Machine learning and
+Data Wrangling tools in the KDD data frame showed us which variables are highly
+correlated. The strong correlated data can be used to create model selection
+and make predictions. We know from this use case that dst_host_same_src_port_rate
+references the percentage of the last 100 connections to the same port, for the
+same destination host. In the resulted correlation matrix shows it’s also positively
+correlated to number of bytes sent form source to destination and the number of
+connections to the same service as the current connection in the past 2
+seconds. </p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<h2><a name="_Toc525394933">Challenges</a></h2>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>How
+to Initialize the code: 1<sup>st</sup> GitHub instructions did not show how so
+I googled and couldn’t find solutions. Thus I looked at our codes and how we initialized
+the code in our HW and used the same format.</p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Difference
+in old python and new python code: throughout the codes chucks, there were incompatibilities
+between old and new python codes. For example: Print coded needed “()” to
+function, to download the file I had to add “.request’ to urllib. </p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=104 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=257 height=188
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image001.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+Updating Issues with Analytics Packages “Pandas” and “numphy”:  this was the
+hardest challenges I spent hours looking to solve the problem. Initially
+“Panda” package didn’t work. I needed to uninstall and install different
+packages to ultimately make it work. </p>
+
+<p class=MsoBodyText style='margin-left:.5in;text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Old
+java vs. new java code: This is where I got stuck and couldn’t resolve. After
+many hours of reading forums and python documentation, I updated java to java9
+but then nothing would work, so I manually changed the java to java8 but still
+didn’t work.</p>
+
+<p class=MsoBodyText style='margin-left:.5in'>&nbsp;</p>
+
+<h2>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=105 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=249 height=147
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image002.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<a name="_Toc525394934"></a><a name="_Toc525394857"></a>Hadoop Book Application</h2>
+
+<p class=MsoBodyText> In Chapter 3 of the book Hadoop Application Architectures,
+the author talks about Processing Data in Hadoop by using advanced analysis for
+machine learning, such as Mahout or Spark MLlib. This use case has a strong
+application of these tools. With sparks iterative machine learning or
+interactive data analysis, I was able to reuse data set cached in memory for
+multiple processing of tasks and significantly improve my model with this
+flexible framework.</p>
+
+<p class=MsoBodyText><span style='position:relative;z-index:251637248;
+left:-1px;top:0px;width:593px;height:276px'><img width=339 height=158
+src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image003.jpg"></span><br
+clear=ALL>
+This use case has a similar application to Chapter 9 Fraud direction,
+exploratory analytics processing is typically done hours or days after the
+event occurred, with the intention of analyzing the event data to improve the
+fraud detection algorithms or analyzing the user behavior over long periods of
+time. In this use case, we did the initial analytics using Spark framework to
+narrow down relevant variable that correlates with network attack. Using this
+variable we can now make predictions and as we get feedback or additional
+observation our analysis and machine learning algorithm improves its prediction.
+</p>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+<h2>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=14 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=260 height=174
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image004.jpg"></td>
+ </tr>
+</table>
+
+<br clear=ALL>
+<a name="_Toc525394935"></a><a name="_Toc525394859"></a>Related V’s</h2>
+
+<table class=MsoTable15Grid4Accent1 border=1 cellspacing=0 cellpadding=0
+ width=613 style='width:459.9pt;border-collapse:collapse;border:none'>
+ <tr style='height:7.15pt'>
+  <td width=91 valign=top style='width:.95in;border:solid #167AF3 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.15pt'>
+  <p class=MsoBodyText>Value</p>
+  </td>
+  <td width=246 valign=top style='width:184.5pt;border:solid #167AF3 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:7.15pt'>
+  <p class=MsoBodyText>To fine Correlated value for an effective model</p>
+  </td>
+  <td width=84 valign=top style='width:63.0pt;border:solid #167AF3 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:7.15pt'>
+  <p class=MsoBodyText>Volume</p>
+  </td>
+  <td width=192 valign=top style='width:2.0in;border:solid #167AF3 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:7.15pt'>
+  <p class=MsoBodyText>2.5M Rows, 75M data</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=91 valign=top style='width:.95in;border:solid #167AF3 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:1.0pt'>
+  <p class=MsoBodyText>Variety</p>
+  </td>
+  <td width=246 valign=top style='width:184.5pt;border-top:none;border-left:
+  none;border-bottom:solid #167AF3 1.0pt;border-right:solid #167AF3 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:1.0pt'>
+  <p class=MsoBodyText>Analysis of Structured Data</p>
+  </td>
+  <td width=84 valign=top style='width:63.0pt;border-top:none;border-left:none;
+  border-bottom:solid #167AF3 1.0pt;border-right:solid #167AF3 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:1.0pt'>
+  <p class=MsoBodyText>Velocity</p>
+  </td>
+  <td width=192 valign=top style='width:2.0in;border-top:none;border-left:none;
+  border-bottom:solid #167AF3 1.0pt;border-right:solid #167AF3 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:1.0pt'>
+  <p class=MsoBodyText>Spark MiLib</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=91 valign=top style='width:.95in;border:solid #167AF3 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:1.0pt'>
+  <p class=MsoBodyText>Varacity</p>
+  </td>
+  <td width=522 colspan=3 valign=top style='width:391.5pt;border-top:none;
+  border-left:none;border-bottom:solid #167AF3 1.0pt;border-right:solid #167AF3 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:1.0pt'>
+  <p class=MsoBodyText>As the data changes, the Correlated Value will change
+  with it. </p>
+  </td>
+ </tr>
+</table>
+
+<h1><a name="_Toc525394936">Screenshots of Jupyter Works</a></h1>
+
+<table class=MsoTable15Grid1LightAccent1 border=1 cellspacing=0 cellpadding=0
+ width=707 style='border-collapse:collapse;border:none'>
+ <tr style='height:17.7pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=666 height=746 id="Picture 4"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image005.jpg"></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=720 height=798 id="Picture 5"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image006.png"></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=714 height=773 id="Picture 6"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image007.png"></p>
+  </td>
+ </tr>
+ <tr style='height:17.25pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.25pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=729 height=833 id="Picture 7"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image008.jpg"></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=761 height=868 id="Picture 8"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image009.png"></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=701 height=773 id="Picture 10"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image010.jpg"></p>
+  </td>
+ </tr>
+ <tr style='height:17.7pt'>
+  <td width=707 valign=top style='width:530.6pt;border:solid #63A6F7 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><img width=699 height=811 id="Picture 11"
+  src="Spark's%20machine%20learning%20library%20(MiLib)%20for%20statistic%20and%20EDA_files/image011.jpg"></p>
+  </td>
+ </tr>
+</table>
+
+<h1><a name="_Toc525394937">Appendix: Source Code</a></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoTable15Grid5DarkAccent1 border=1 cellspacing=0 cellpadding=0
+ width=571 style='background:#D9D9D9;border-collapse:collapse;border:none'>
+ <tr style='height:104.1pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;height:104.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#intilizing context</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>import pyspark</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>sc = pyspark.SparkContext('local[*]')</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#This is where i got
+  this</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#https://github.com/jadianes/spark-py-notebooks/blob/master/nb7-mllib-statistics/nb7-mllib-statistics.ipynb</span></p>
+  </td>
+ </tr>
+ <tr style='height:51.85pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:51.85pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#nameing the data</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>data_file =
+  &quot;./kddcup.data_10_percent.gz&quot;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>raw_data =
+  sc.textFile(data_file)</span></p>
+  </td>
+ </tr>
+ <tr style='height:190.85pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:190.85pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#An RDD of dense
+  vectors</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>import numpy as np</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>def
+  parse_interaction(line):</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    line_split =
+  line.split(&quot;,&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    # keep just
+  numeric and logical values</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    symbolic_indexes =
+  [1,2,3,41]</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    clean_line_split =
+  [item for i,item in enumerate(line_split) if i not in symbolic_indexes]</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    return
+  np.array([float(x) for x in clean_line_split])</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>vector_data =
+  raw_data.map(parse_interaction)</span></p>
+  </td>
+ </tr>
+ <tr style='height:243.15pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:243.15pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#Summary statistics</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>from
+  pyspark.mllib.stat import Statistics </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>from math import sqrt </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'># Compute column
+  summary statistics.</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>summary =
+  Statistics.colStats(vector_data)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#had to fix the print
+  code</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot;Duration
+  Statistics:&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Mean:
+  {}&quot;.format(round(summary.mean()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; St.
+  deviation: {}&quot;.format(round(sqrt(summary.variance()[0]),3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Max
+  value: {}&quot;.format(round(summary.max()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Min
+  value: {}&quot;.format(round(summary.min()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Total
+  value count: {}&quot;.format(summary.count()))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Number
+  of non-zero values: {}&quot;.format(summary.numNonzeros()[0]))</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#Summary statistics by
+  label</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>def
+  parse_interaction_with_key(line):</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    line_split =
+  line.split(&quot;,&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    # keep just
+  numeric and logical values</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    symbolic_indexes =
+  [1,2,3,41]</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    clean_line_split =
+  [item for i,item in enumerate(line_split) if i not in symbolic_indexes]</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    return
+  (line_split[41], np.array([float(x) for x in clean_line_split]))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>label_vector_data =
+  raw_data.map(parse_interaction_with_key)</span></p>
+  </td>
+ </tr>
+ <tr style='height:16.95pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:16.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>normal_label_data =
+  label_vector_data.filter(lambda x: x[0]==&quot;normal.&quot;)</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>normal_summary =
+  Statistics.colStats(normal_label_data.values())</span></p>
+  </td>
+ </tr>
+ <tr style='height:138.95pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:138.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#fixed print code</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot;Duration
+  Statistics for label: {}&quot;.format(&quot;normal&quot;))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Mean:
+  {}&quot;.format(round(normal_summary.mean()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; St.
+  deviation: {}&quot;.format(round(sqrt(normal_summary.variance()[0]),3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Max
+  value: {}&quot;.format(round(normal_summary.max()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Min
+  value: {}&quot;.format(round(normal_summary.min()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Total
+  value count: {}&quot;.format(normal_summary.count()))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Number
+  of non-zero values: {}&quot;.format(normal_summary.numNonzeros()[0]))</span></p>
+  </td>
+ </tr>
+ <tr style='height:51.85pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:51.85pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>def
+  summary_by_label(raw_data, label):</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    label_vector_data
+  = raw_data.map(parse_interaction_with_key).filter(lambda x: x[0]==label)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    return
+  Statistics.colStats(label_vector_data.values())</span></p>
+  </td>
+ </tr>
+ <tr style='height:173.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:173.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#fixed print code</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>normal_sum =
+  summary_by_label(raw_data, &quot;normal.&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot;Duration
+  Statistics for label: {}&quot;.format(&quot;normal&quot;))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Mean:
+  {}&quot;.format(round(normal_summary.mean()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; St.
+  deviation: {}&quot;.format(round(sqrt(normal_summary.variance()[0]),3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Max
+  value: {}&quot;.format(round(normal_summary.max()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Min
+  value: {}&quot;.format(round(normal_summary.min()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Total
+  value count: {}&quot;.format(normal_summary.count()))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Number
+  of non-zero values: {}&quot;.format(normal_summary.numNonzeros()[0]))</span></p>
+  </td>
+ </tr>
+ <tr style='height:104.1pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:104.1pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#fixed print code</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>guess_passwd_summary =
+  summary_by_label(raw_data, &quot;guess_passwd.&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot;Duration
+  Statistics for label: {}&quot;.format(&quot;guess_passwd&quot;))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Mean:
+  {}&quot;.format(round(guess_passwd_summary.mean()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; St.
+  deviation:
+  {}&quot;.format(round(sqrt(guess_passwd_summary.variance()[0]),3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Max
+  value: {}&quot;.format(round(guess_passwd_summary.max()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Min
+  value: {}&quot;.format(round(guess_passwd_summary.min()[0],3)))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Total
+  value count: {}&quot;.format(guess_passwd_summary.count()))</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot; Number
+  of non-zero values: {}&quot;.format(guess_passwd_summary.numNonzeros()[0]))</span></p>
+  </td>
+ </tr>
+ <tr style='height:86.7pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:86.7pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>label_list =
+  [&quot;back.&quot;,&quot;buffer_overflow.&quot;,&quot;ftp_write.&quot;,&quot;guess_passwd.&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>             
+  &quot;imap.&quot;,&quot;ipsweep.&quot;,&quot;land.&quot;,&quot;loadmodule.&quot;,&quot;multihop.&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>             
+  &quot;neptune.&quot;,&quot;nmap.&quot;,&quot;normal.&quot;,&quot;perl.&quot;,&quot;phf.&quot;,&quot;pod.&quot;,&quot;portsweep.&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>             
+  &quot;rootkit.&quot;,&quot;satan.&quot;,&quot;smurf.&quot;,&quot;spy.&quot;,&quot;teardrop.&quot;,&quot;warezclient.&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>              &quot;warezmaster.&quot;]</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>stats_by_label =
+  [(label, summary_by_label(raw_data, label)) for label in label_list]</span></p>
+  </td>
+ </tr>
+ <tr style='height:64.55pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:64.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>duration_by_label = [ </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    (stat[0],
+  np.array([float(stat[1].mean()[0]), float(sqrt(stat[1].variance()[0])),
+  float(stat[1].min()[0]), float(stat[1].max()[0]), int(stat[1].count())])) </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    for stat in
+  stats_by_label]</span></p>
+  </td>
+ </tr>
+ <tr style='height:98.95pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:98.95pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>import pandas as pd</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>pd.set_option('display.max_columns',
+  50)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>stats_by_label_df =
+  pd.DataFrame.from_items(duration_by_label, columns=[&quot;Mean&quot;,
+  &quot;Std Dev&quot;, &quot;Min&quot;, &quot;Max&quot;, &quot;Count&quot;],
+  orient='index')</span></p>
+  </td>
+ </tr>
+ <tr style='height:34.85pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:34.85pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot;Duration
+  statistics, by label&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>stats_by_label_df</span></p>
+  </td>
+ </tr>
+ <tr style='height:128.65pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:128.65pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>def
+  get_variable_stats_df(stats_by_label, column_i):</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>   
+  column_stats_by_label = [</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>        (stat[0],
+  np.array([float(stat[1].mean()[column_i]),
+  float(sqrt(stat[1].variance()[column_i])), float(stat[1].min()[column_i]),
+  float(stat[1].max()[column_i]), int(stat[1].count())])) </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>        for stat in
+  stats_by_label</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    ]</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>    return
+  pd.DataFrame.from_items(column_stats_by_label, columns=[&quot;Mean&quot;,
+  &quot;Std Dev&quot;, &quot;Min&quot;, &quot;Max&quot;, &quot;Count&quot;],
+  orient='index')</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>get_variable_stats_df(stats_by_label,0)</span></p>
+  </td>
+ </tr>
+ <tr style='height:34.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:34.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>print (&quot;src_bytes
+  statistics, by label&quot;)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>get_variable_stats_df(stats_by_label,1)</span></p>
+  </td>
+ </tr>
+ <tr style='height:52.3pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:52.3pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>#Correlations</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>from
+  pyspark.mllib.stat import Statistics  </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>correlation_matrix =
+  Statistics.corr(vector_data, method=&quot;spearman&quot;)</span></p>
+  </td>
+ </tr>
+ <tr style='height:17.4pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:17.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>import pandas as pd</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>pd.set_option('display.max_columns',
+  50)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>col_names =
+  [&quot;duration&quot;,&quot;src_bytes&quot;,&quot;dst_bytes&quot;,&quot;land&quot;,&quot;wrong_fragment&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;urgent&quot;,&quot;hot&quot;,&quot;num_failed_logins&quot;,&quot;logged_in&quot;,&quot;num_compromised&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;root_shell&quot;,&quot;su_attempted&quot;,&quot;num_root&quot;,&quot;num_file_creations&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;num_shells&quot;,&quot;num_access_files&quot;,&quot;num_outbound_cmds&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;is_hot_login&quot;,&quot;is_guest_login&quot;,&quot;count&quot;,&quot;srv_count&quot;,&quot;serror_rate&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;srv_serror_rate&quot;,&quot;rerror_rate&quot;,&quot;srv_rerror_rate&quot;,&quot;same_srv_rate&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;diff_srv_rate&quot;,&quot;srv_diff_host_rate&quot;,&quot;dst_host_count&quot;,&quot;dst_host_srv_count&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>             &quot;dst_host_same_srv_rate&quot;,&quot;dst_host_diff_srv_rate&quot;,&quot;dst_host_same_src_port_rate&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;dst_host_srv_diff_host_rate&quot;,&quot;dst_host_serror_rate&quot;,&quot;dst_host_srv_serror_rate&quot;,</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>            
+  &quot;dst_host_rerror_rate&quot;,&quot;dst_host_srv_rerror_rate&quot;]</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>corr_df = pd.DataFrame(correlation_matrix,
+  index=col_names, columns=col_names)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>corr_df</span></p>
+  </td>
+ </tr>
+ <tr style='height:121.55pt'>
+  <td width=571 valign=top style='width:428.25pt;border:solid white 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;height:121.55pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'># get a boolean
+  dataframe where true means that a pair of variables is highly correlated</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>highly_correlated_df =
+  (abs(corr_df) &gt; .8) &amp; (corr_df &lt; 1.0)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'># get the names of the
+  variables so we can use them to slice the dataframe</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>correlated_vars_index
+  = (highly_correlated_df==True).any()</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>correlated_var_names =
+  correlated_vars_index[correlated_vars_index==True].index</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'># slice it</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Calibri",sans-serif'>highly_correlated_df.loc[correlated_var_names,correlated_var_names]</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1><a name="_Toc525394938">Refereces</a></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoTable15Plain1 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:40.15pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:40.15pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a
+  href="https://github.com/jadianes/spark-py-notebooks/blob/master/nb7-mllib-statistics/nb7-mllib-statistics.ipynb">https://github.com/jadianes/spark-py-notebooks/blob/master/nb7-mllib-statistics/nb7-mllib-statistics.ipynb</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:13.35pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a
+  href="https://github.com/jadianes/spark-py-notebooks">https://github.com/jadianes/spark-py-notebooks</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:13.35pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a
+  href="http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html">http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:39.75pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:39.75pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a
+  href="https://www.codementor.io/spark/tutorial/building-a-recommender-with-apache-spark-python-example-app-part1">https://www.codementor.io/spark/tutorial/building-a-recommender-with-apache-spark-python-example-app-part1</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:26.75pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:26.75pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a
+  href="http://www.codingbyte.com/30-most-frequently-used-linux-commands-with-examples/">http://www.codingbyte.com/30-most-frequently-used-linux-commands-with-examples/</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:13.35pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a href="https://docs.python.org">https://docs.python.org</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:26.75pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:26.75pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span class=MsoHyperlink><a
+  href="http://www.thegeekstuff.com/2010/11/50-linux-commands/?utm_source=feedburner">http://www.thegeekstuff.com/2010/11/50-linux-commands/?utm_source=feedburner</a></span></p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:13.35pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Hadoop Application Architectures Book</p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:13.35pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>Numerous Stack overflow threads for diagnosing errors </p>
+  </td>
+ </tr>
+ <tr style='height:13.35pt'>
+  <td width=573 valign=top style='width:429.7pt;border:solid #BFBFBF 1.0pt;
+  border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt;height:13.35pt'>
+  <p class=MsoListParagraph style='margin-bottom:0in;margin-bottom:.0001pt;
+  text-indent:-.25in;line-height:normal'><span style='font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>All HW Instructions and Notes from the class </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

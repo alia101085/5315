@@ -7,10 +7,19 @@
 <!--
  /* Font Definitions */
  @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
 	{font-family:"Cambria Math";
 	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
 	{font-family:"Century Gothic";}
+@font-face
+	{font-family:HYGothic-Medium;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@HYGothic-Medium";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin-top:0in;
@@ -230,6 +239,14 @@ a:link, span.MsoHyperlink
 a:visited, span.MsoHyperlinkFollowed
 	{color:#356A95;
 	text-decoration:underline;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
 p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
 	{margin:0in;
 	margin-bottom:.0001pt;
@@ -318,28 +335,34 @@ p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
 	font-size:18.0pt;
 	font-family:"Century Gothic",sans-serif;
 	color:#021730;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Century Gothic",sans-serif;
+	color:#021730;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.cm-keyword
+	{mso-style-name:cm-keyword;}
+span.hljs-string
+	{mso-style-name:hljs-string;}
+span.hljs-number
+	{mso-style-name:hljs-number;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Century Gothic",sans-serif;
+	color:#032348;}
 span.HeaderChar
 	{mso-style-name:"Header Char";
 	mso-style-link:Header;}
 span.FooterChar
 	{mso-style-name:"Footer Char";
 	mso-style-link:Footer;}
-span.cm-keyword
-	{mso-style-name:cm-keyword;}
-span.cm-variable-2
-	{mso-style-name:cm-variable-2;}
-span.cm-number
-	{mso-style-name:cm-number;}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Century Gothic",sans-serif;
-	color:#021730;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Century Gothic",sans-serif;
-	color:#032348;}
 span.Heading3Char
 	{mso-style-name:"Heading 3 Char";
 	mso-style-link:"Heading 3";
@@ -412,7 +435,7 @@ span.IntenseQuoteChar
  /* Page Definitions */
  @page WordSection1
 	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;}
+	margin:.5in .5in .5in .5in;}
 div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
@@ -431,118 +454,152 @@ ul
 
 <p class=MsoTocHeading>By Afsar Ali</p>
 
-<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525332710"><b>Simple Website
-using Git and AWS EC2 server:</b><span style='display:none;text-decoration:
-none'> </span><span
-style='display:none;text-decoration:none'>1</span></a></span></p>
-
-<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525332711">(1)<span
-style='text-decoration:none'>      </span>The URL (web page address):
-http://34.212.0.239/xmltable.html<span style='display:none;text-decoration:
-none'> </span><span
-style='display:none;text-decoration:none'>1</span></a></span></p>
-
-<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525332712">(2)<span
-style='text-decoration:none'>      </span>Discuss structured, unstructured,
-semi-structured<span style='display:none;text-decoration:none'>. </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
-
-<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525332713">(3)<span
-style='text-decoration:none'>      </span>Discuss XML and JSON formats:<span
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525334386"><b>Machine
+Learning Movie Recommendation Service with AWS EC2 Server</b><span
 style='display:none;text-decoration:none'> </span><span
 style='display:none;text-decoration:none'>1</span></a></span></p>
 
-<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525332714">(4)<span
-style='text-decoration:none'>      </span>A screenshot of the web page:<span
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525334387">1.<span
+style='text-decoration:none'>    </span>Discuss the nature of Datasets used in
+this example<span style='display:none;text-decoration:none'>. </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525334388">2.<span
+style='text-decoration:none'>    </span>Describe the Data ingestion<span
+style='display:none;text-decoration:none'>. </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525334389">3.<span
+style='text-decoration:none'>    </span>Describe the Data process<span
 style='display:none;text-decoration:none'> </span><span
 style='display:none;text-decoration:none'>1</span></a></span></p>
 
-<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525332715">(5)<span
-style='text-decoration:none'>      </span>Source code of the json and xml
-files:<span style='display:none;text-decoration:none'> </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525334390">4.<span
+style='text-decoration:none'>    </span>Summarize the recommendation service
+with datasets<span style='display:none;text-decoration:none'> </span><span style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><a href="#_Toc525334391">5.<span
+style='text-decoration:none'>    </span>Enter your ratings and evaluate the
+recommendations. Does this fit to your preferences? Why can it produces your
+preferences correctly/not correctly?<span style='display:none;text-decoration:
+none'>. </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc525334392">Screen shot
+of Jupyter Notebook with the ratings and its recommendations.<span
+style='display:none;text-decoration:none'> </span><span
+style='display:none;text-decoration:none'>1</span></a></span></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h1><a name="_Toc525332710"><b><u><span style='font-size:14.0pt'>Simple Website</span></u></b></a><b><span
-style='font-size:14.0pt'> using Git and AWS EC2 server:</span></b></h1>
+<h1><a name="_Toc525334386"></a><a name="_Toc525332349"><b><span
+style='font-size:14.0pt'>Machine Learning Movie Recommendation Service with AWS
+EC2 Server</span></b></a></h1>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-normal'> </p>
+normal'>&nbsp;</p>
 
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal'><a name="_Toc525332711">(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span>The URL (web page address): </a><a
-href="http://34.212.0.239/xmltable.html">http://34.212.0.239/xmltable.html</a></p>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;margin-bottom:.0001pt;
+text-indent:-.25in;line-height:normal'><a name="_Toc525334387">1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Discuss
+the nature of Datasets used in this example</a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'>The
+nature of the dataset (ml-20m) in this example is rating activity from
+MovieLens, a movie recommendation service. MovieLens helps users find movies they
+would like.  It contains 20000263 ratings and 465564 tag applications across
+27278 movies. These data were created by 138493 users between January 09, 1995
+and March 31, 2015. This dataset was generated on October 17, 2016. MLlib is
+Spark’s scalable machine learning library consisting of common learning
+algorithms and utilities, including classification, regression, clustering,
+collaborative filtering, dimensionality reduction, as well as underlying
+optimization primitives. As user rate movies to build a custom taste profile,
+the machine learning algorithm recommends movies for the users to watch. Users were
+selected at random for inclusion. There are no demographic information. The
+user is represented by an id only. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'>&nbsp;</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
-.0001pt;line-height:normal'>&nbsp;</p>
+.0001pt;text-indent:-.25in;line-height:normal'><a name="_Toc525334388">2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Describe
+the Data ingestion</a></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal'><a name="_Toc525332712">(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span>Discuss structured, unstructured, semi-structured</a> </p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;line-height:normal'><b>Structured
-Data:</b> structured data refers to information with a high degree of
-organization, such that inclusion in a relational database is seamless and
-readily searchable by simple, straightforward search engine algorithms or other
-search operations. Whereas <b>unstructured data</b> is the opposite. The lack
-of structure makes compilation a time and energy-consuming task. Business has
-to find a mechanism of data analysis to reduce the costs unstructured data adds
-to the organization. <b>Semi-Structured Data:</b>  The line between
-unstructured data and semi-structured is a little fuzzy.  If the data has any
-organizational structure (a known schema) or carries a tag (like XML extensible
-markup language used for documents on the web), then it is somewhat easier to
-organize and analyze, and because it is more accessible for analysis may make
-it more valuable.  Some types of data that appear to be unstructured can be
-semi-structured data. </p>
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'>Data
+ingestion is the process of obtaining and importing data for immediate use or
+storage in a database. To ingest something is to &quot;take something in or
+absorb something.&quot; Data can be streamed in real time or ingested in
+batches. In this case we are importing the data from Movie Lens Dataset in
+batch. Group Lens research has collected and made available this rating data
+sets from the Movie Lens web site. The data sets were collected over various
+periods of time.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'>&nbsp;</p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal'><a name="_Toc525332713">(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span>Discuss XML and JSON formats:</a></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+.0001pt;text-indent:-.25in;line-height:normal'><a name="_Toc525334389">3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Describe
+the Data process</a></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.75in;margin-bottom:.0001pt;line-height:normal'>Extensible
-Markup Language (XML) is a text format, and JSON (JavaScript Object Notation)
-is a lightweight data-interchange format are the two most common formats for
-data interchange in the Web today. Both JSON and XML can be used to receive
-data from a web server. XML is much more difficult to parse than JSON. JSON is
-parsed into a ready-to-use JavaScript object. Essentially, JSON is the Fat-Free
-Alternative to XML</p>
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'>Data
+processing is, generally, &quot;the collection and manipulation of items of
+data to produce meaningful information.&quot; In order to build to our movie
+recommendation using Spark, we need to preprocess our data by loading and
+parsing the dataset, persisting the resulting RDD for later use. Then building
+the recommender model using the complete dataset and persisting the dataset for
+later use.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
 margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'>&nbsp;</p>
 
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+.0001pt;text-indent:-.25in;line-height:normal'><a name="_Toc525334390">4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Summarize
+the recommendation service with datasets</a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in'>Our
+Recommendation model is using Spark's MLlib library provides scalable data
+analytics. We used distributed computation engine to perform model computation
+using real-world recommendation engine. We had to reduce dataset and select
+parameters for our ALS model. As the new user rates movies the model predicts
+the ratings for new recommendation. Basically the model uses the new user
+preferences in order to compare them with other users in the dataset. And the
+recommender needs to be trained every time there is new user rating.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;margin-bottom:
+.0001pt;text-indent:-.25in;line-height:normal'><a name="_Toc525334391">5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Enter
+your ratings and evaluate the recommendations. Does this fit to your
+preferences? Why can it produces your preferences correctly/not correctly?</a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in'>It does fit my
+preferences. It can produce my preferences correctly because the data set was
+large and using Alternating Least Squares and Collaborative Filtering and many
+users habits and likes, using all of this information and matching my
+Recommendations to output most likely movies I would like. </p>
+
 <p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span> <a
-name="_Toc525332714">A screenshot of the web page:</a></p>
+margin-bottom:0in;margin-left:1.25in;margin-bottom:.0001pt;line-height:normal'>&nbsp;</p>
 
-<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:.75in;margin-bottom:.0001pt;line-height:normal'><img border=0
-width=566 height=386 id="Picture 1"
-src="Simple%20Website%20using%20Git%20and%20AWS%20EC2%20server_files/image001.jpg"></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
 
-<p class=MsoListParagraphCxSpFirst style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;text-indent:-.25in;
-line-height:normal'><a name="_Toc525332715">(5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
-</span>Source code of the json and xml files:</a></p>
+<h1><a name="_Toc525334392">Screen shot of Jupyter Notebook with the ratings
+and its recommendations.</a></h1>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal'><b><span
-style='color:#00B050'>&nbsp;</span></b></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><img width=720 height=437 id="Picture 3"
+src="Machine%20Learning%20Movie%20Recommendation%20Service%20with%20AWS%20EC2%20Server_files/image001.jpg"></p>
 
-<p class=MsoListParagraphCxSpLast style='margin-top:0in;margin-right:0in;
-margin-bottom:0in;margin-left:.25in;margin-bottom:.0001pt;line-height:normal'><b><span
-style='color:#00B050'><img border=0 width=99 height=67
-src="Simple%20Website%20using%20Git%20and%20AWS%20EC2%20server_files/image002.png"><img
-border=0 width=99 height=67
-src="Simple%20Website%20using%20Git%20and%20AWS%20EC2%20server_files/image003.png"></span></b></p>
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><img width=522 height=439 id="Picture 1"
+src="Machine%20Learning%20Movie%20Recommendation%20Service%20with%20AWS%20EC2%20Server_files/image002.jpg"></p>
 
 </div>
 
